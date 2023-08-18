@@ -1,4 +1,11 @@
 @import "./_partials/reset";
 @import "./_partials/helpers";
+@import "./_partials/swiper";
+@import "./_partials/fontawesome.min";
 @import "./_partials/categories";
 @import "./_partials/product";
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}

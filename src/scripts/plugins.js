@@ -1,24 +1,23 @@
 // swiper
 
 // import Swiper JS
-import Swiper from "swiper";
+import Swiper from "swiper/bundle";
 // import Swiper styles
-import "swiper/css";
 
-const swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".mySwiper", {
   loop: true,
-  spaceBetween: 10,
+  spaceBetween: 20,
   slidesPerView: 4,
-  freeMode: true,
+  freeMode: false,
   watchSlidesProgress: true,
-});
-var swiper2 = new Swiper(".mySwiper2", {
-  loop: true,
-  spaceBetween: 10,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+});
+var swiper2 = new Swiper(".mySwiper2", {
+  loop: true,
+  spaceBetween: 10,
   thumbs: {
     swiper: swiper,
   },
